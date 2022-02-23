@@ -1,0 +1,31 @@
+{
+	"name": "koa-setup",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"bin": {
+		"mykoa": "./bin/index.js"
+	},
+	"type": "module",
+	"files": [
+		"bin",
+		"package.json"
+	],
+	"scripts": {
+		"test": "rm -rf hei  && node bin/index.js",
+		"test-g": "rm -rf hei  && koa-setup"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"chalk": "^5.0.0",
+		"ejs": "^3.1.6",
+		"execa": "^6.0.0",
+		"inquirer": "^8.2.0",
+		"prettier": "^2.5.1"
+	},
+	"devDependencies": {
+		"@types/node": "^17.0.8"
+	}
+}
